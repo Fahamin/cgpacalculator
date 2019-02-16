@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/cgpaCalculationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round"
+                        android:padding="5dp"
+                        android:text="Course"
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="0.7"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round"
+                        android:padding="5dp"
+                        android:text="Credit"
+
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round"
+                        android:padding="5dp"
+                        android:text="Grade"
+
+                        android:textAlignment="center"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/s_course_TV1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 1"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner1"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:id="@+id/s_course_TV2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 2"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner2"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_raw_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/s_course_TV3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 3"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner3"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/s_course_TV4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 4"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner4"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/s_course_TV5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 5"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner5"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/s_course_TV6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 6"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner6"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/s_course_TV7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 7"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner7"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/s_course_TV8"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 8"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET8"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner8"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/s_course_TV9"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 9"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET9"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner9"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/s_course_TV10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 10"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET10"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner10"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/s_course_TV11"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 11"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET11"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner11"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/s_course_TV12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 12"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner12"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/s_course_TV13"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 13"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET13"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner13"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/s_course_TV14"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 14"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET14"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner14"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/s_row_15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:id="@+id/s_course_TV15"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.8"
+                                android:background="@drawable/round"
+                                android:padding="5dp"
+                                android:text="Course 15"
+                                android:textSize="15sp" />
+
+                            <EditText
+                                android:id="@+id/s_credit_ET15"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="0.7"
+                                android:background="@drawable/round"
+                                android:hint="Credit"
+                                android:inputType="numberDecimal"
+                                android:padding="5dp"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/s_spinner15"
+                                style="@style/SpinnerTextStyle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/round"
+                                android:entries="@array/gpaGrades"
+                                android:padding="5dp">
+
+
+                            </Spinner>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginTop="2dp"
+                        android:elevation="3dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/adView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="7"
+                            ads:adSize="BANNER"
+                            ads:adUnitId="@string/banner_ad_unit_id"></com.google.android.gms.ads.AdView>
+
+                        <TextView
+                            android:id="@+id/add_course_TV"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:background="@drawable/circle"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:padding="6dp"
+                            android:text="+"
+                            android:textColor="#fff"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/calculate_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/calculate_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/oval"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Calculate"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:id="@+id/resultLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#EEF1F6"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:scaleType="fitCenter">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="CGPA Calculator"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Calculation Details Here :"
+                android:textColor="#182EFA"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="1dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Total Course :"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/total_course_TV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="2dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="1dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="  Total Credit :"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/total_credit_TV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="2dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="1dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="    Total Point :"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/total_grade_TV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="2dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:background="#000" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+
+                    <TextView
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="1dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="         CGPA :"
+                        android:textColor="#DD2C00"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/total_cgpa_TV"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="2dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="#DD2C00"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/oval"
+                android:onClick="resetallText"
+                android:text="Reset"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textColor="#ffffffff"
+                tools:ignore="OnClick" />
+
+            <Button
+                android:id="@+id/againCalID"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/oval"
+                android:padding="2dp"
+                android:text="Edit"
+                android:textColor="#ffffffff"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

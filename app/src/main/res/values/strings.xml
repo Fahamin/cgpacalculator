@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">CGPA Calculator</string>
+
+
+    <string name="Rate">Rate This App</string>
+    <string name="shareapp"></string>
+    <string name="Review">Reviews</string>
+    <string name="more">More Apps</string>
+    <string name="exit">Exit</string>
+
+
+    <string name="appID">ca-app-pub-4726525166301004~5360934245</string>
+    <string name="instarial_full_screen">ca-app-pub-4726525166301004/2333894779</string>
+    <string name="banner_ad_unit_id">ca-app-pub-4726525166301004/5524585779</string>
+    <string-array
+
+        name="gpaGrades">
+
+        <item>Select GPA</item>
+        <item>A+ (4.00)</item>
+        <item>A (3.75)</item>
+        <item>A- (3.50)</item>
+        <item>B+ (3.25)</item>
+        <item>B (3.00)</item>
+        <item>B- (2.75)</item>
+        <item>C+ (2.50)</item>
+        <item>C (2.25)</item>
+        <item>D (2.00)</item>
+        <item>F (0.00)</item>
+
+    </string-array>
+
+
+    <string name="interstitial_full_screen1">ca-app-pub-5809082953640465/1532003948</string>
+</resources>
